@@ -1,0 +1,926 @@
+Instructions to be executed:
+add r1 r2 r3
+sub r4 r5 r6
+mul r7 r8 r9
+addi r12 r12 1
+div r10 r11 r12
+lw r13 100(r14)
+sw r15 200(r16)
+addi r17 r18 50
+subi r19 r20 25
+beq r21 r22 100
+bne r23 r24 200
+j 300
+jal 400
+jr r25
+add r4 r1 r5
+mul r6 r4 r7
+lw r8 100(r9)
+add r10 r8 r11
+sw r12 200(r13)
+beq r14 r15 4
+add r16 r17 r18
+add r19 r20 r21
+addi r22 r23 50
+subi r24 r25 25
+
+
+Clock Cycle: 0
+
+=== Estado do Simulador ===
+Ciclo: 0
+PC: 0
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=0 
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=0 
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+
+[DEBUG] Processando instrução 0: add r1 r2 r3
+[DEBUG] Emitindo instrução 0: add r1 r2 r3
+
+Clock Cycle: 1
+
+=== Estado do Simulador ===
+Ciclo: 1
+PC: 1
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=2 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=0 
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=0 
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r1: Busy=1 Qi=Add0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+
+[DEBUG] Processando instrução 1: sub r4 r5 r6
+[DEBUG] Emitindo instrução 1: sub r4 r5 r6
+
+Clock Cycle: 2
+
+=== Estado do Simulador ===
+Ciclo: 2
+PC: 2
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=2 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add1: Busy=1 Op=3 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=0 
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=2
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=0 
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r1: Busy=1 Qi=Add0
+r4: Busy=1 Qi=Add1
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+
+[DEBUG] Processando instrução 2: mul r7 r8 r9
+[DEBUG] Emitindo instrução 2: mul r7 r8 r9
+
+Clock Cycle: 3
+
+=== Estado do Simulador ===
+Ciclo: 3
+PC: 3
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=2 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add1: Busy=1 Op=3 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=0 
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=1
+Add2: Busy=1 Remaining=2
+Mult1: Busy=0 
+Mult2: Busy=0 
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r1: Busy=1 Qi=Add0
+r4: Busy=1 Qi=Add1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+
+[DEBUG] Processando instrução 3: addi r12 r12 1
+[DEBUG] Emitindo instrução 3: addi r12 r12 1
+
+Clock Cycle: 4
+
+=== Estado do Simulador ===
+Ciclo: 4
+PC: 4
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=2 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add1: Busy=1 Op=3 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add2: Busy=1 Op=6 Vj=0 Vk=1 Qj=- Qk=- A=0
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=0 
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=0
+Add2: Busy=1 Remaining=1
+Mult1: Busy=1 Remaining=10
+Mult2: Busy=0 
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r1: Busy=1 Qi=Add0
+r12: Busy=1 Qi=Add2
+r4: Busy=1 Qi=Add1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+[DEBUG] Atualizando registrador r1 = 0
+[DEBUG] Forwarding valor 0 de Add0
+
+[DEBUG] Processando instrução 4: div r10 r11 r12
+[DEBUG] Emitindo instrução 4: div r10 r11 r12
+
+Clock Cycle: 5
+
+=== Estado do Simulador ===
+Ciclo: 5
+PC: 5
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=1 Op=3 Vj=0 Vk=0 Qj=- Qk=- A=0
+Add2: Busy=1 Op=6 Vj=0 Vk=1 Qj=- Qk=- A=0
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=0 Qj=- Qk=Add2 A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=2
+Add2: Busy=1 Remaining=0
+Mult1: Busy=1 Remaining=9
+Mult2: Busy=0 
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r12: Busy=1 Qi=Add2
+r4: Busy=1 Qi=Add1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+[DEBUG] Atualizando registrador r4 = 0
+[DEBUG] Forwarding valor 0 de Add1
+
+[DEBUG] Processando instrução 5: lw r13 100(r14)
+[DEBUG] Load pronto para executar: Load0 -> r13 (addr=100)
+[DEBUG] Load iniciado: Load0 -> r13
+
+Clock Cycle: 6
+
+=== Estado do Simulador ===
+Ciclo: 6
+PC: 6
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=1 Op=6 Vj=0 Vk=1 Qj=- Qk=- A=0
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=0 Qj=- Qk=Add2 A=0
+
+--- Buffers de Load ---
+Load0: Busy=1 Op=0 Address=100 QAddr=- Dest=r13
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=1
+Add2: Busy=0 
+Mult1: Busy=1 Remaining=8
+Mult2: Busy=0 
+Load: Busy=1 Remaining=2
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r12: Busy=1 Qi=Add2
+r13: Busy=1 Qi=Load0
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+
+[DEBUG] Processando instrução 6: sw r15 200(r16)
+[DEBUG] Store pronto para executar: Store0 -> Memory[200] = 0
+[DEBUG] Store iniciado: Store0 -> Memory[200]
+
+Clock Cycle: 7
+
+=== Estado do Simulador ===
+Ciclo: 7
+PC: 7
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=1 Op=6 Vj=0 Vk=1 Qj=- Qk=- A=0
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=0 Qj=- Qk=Add2 A=0
+
+--- Buffers de Load ---
+Load0: Busy=1 Op=0 Address=100 QAddr=- Dest=r13
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=1 Op=1 Address=200 QAddr=- QValue=- V=0
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=0
+Add2: Busy=0 
+Mult1: Busy=1 Remaining=7
+Mult2: Busy=0 
+Load: Busy=1 Remaining=1
+Store: Busy=1 Remaining=2
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r12: Busy=1 Qi=Add2
+r13: Busy=1 Qi=Load0
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=0 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+[DEBUG] Atualizando registrador r12 = 1
+[DEBUG] Forwarding valor 1 de Add2
+[DEBUG] Forwarding para Mult1.qk = 1
+
+[DEBUG] Processando instrução 7: addi r17 r18 50
+[DEBUG] Emitindo instrução 7: addi r17 r18 50
+
+Clock Cycle: 8
+
+=== Estado do Simulador ===
+Ciclo: 8
+PC: 8
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=6 Vj=0 Vk=50 Qj=- Qk=- A=0
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=1 Op=0 Address=100 QAddr=- Dest=r13
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=1 Op=1 Address=200 QAddr=- QValue=- V=0
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=1 Remaining=6
+Mult2: Busy=1 Remaining=10
+Load: Busy=1 Remaining=0
+Store: Busy=1 Remaining=1
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r13: Busy=1 Qi=Load0
+r17: Busy=1 Qi=Add0
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+
+[DEBUG] Forwarding valor 0 de Load0
+[DEBUG] Load completado: r13 = 0
+
+[DEBUG] Processando instrução 8: subi r19 r20 25
+[DEBUG] Emitindo instrução 8: subi r19 r20 25
+
+Clock Cycle: 9
+
+=== Estado do Simulador ===
+Ciclo: 9
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=6 Vj=0 Vk=50 Qj=- Qk=- A=0
+Add1: Busy=1 Op=7 Vj=0 Vk=25 Qj=- Qk=- A=0
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=1 Op=1 Address=200 QAddr=- QValue=- V=0
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=2
+Add2: Busy=0 
+Mult1: Busy=1 Remaining=5
+Mult2: Busy=1 Remaining=9
+Load: Busy=0 
+Store: Busy=1 Remaining=0
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r17: Busy=1 Qi=Add0
+r19: Busy=1 Qi=Add1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 
+[DEBUG] Store completado: Memory[200] = 0
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 10
+
+=== Estado do Simulador ===
+Ciclo: 10
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=6 Vj=0 Vk=50 Qj=- Qk=- A=0
+Add1: Busy=1 Op=7 Vj=0 Vk=25 Qj=- Qk=- A=0
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=1
+Add2: Busy=1 Remaining=2
+Mult1: Busy=1 Remaining=4
+Mult2: Busy=1 Remaining=8
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r17: Busy=1 Qi=Add0
+r19: Busy=1 Qi=Add1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 11
+
+=== Estado do Simulador ===
+Ciclo: 11
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=1 Op=6 Vj=0 Vk=50 Qj=- Qk=- A=0
+Add1: Busy=1 Op=7 Vj=0 Vk=25 Qj=- Qk=- A=0
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=1 Remaining=0
+Add2: Busy=1 Remaining=1
+Mult1: Busy=1 Remaining=3
+Mult2: Busy=1 Remaining=7
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r17: Busy=1 Qi=Add0
+r19: Busy=1 Qi=Add1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=0 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+[DEBUG] Atualizando registrador r17 = 50
+[DEBUG] Forwarding valor 50 de Add0
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 12
+
+=== Estado do Simulador ===
+Ciclo: 12
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=1 Op=7 Vj=0 Vk=25 Qj=- Qk=- A=0
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=1 Remaining=0
+Mult1: Busy=1 Remaining=2
+Mult2: Busy=1 Remaining=6
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r19: Busy=1 Qi=Add1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=0 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+[DEBUG] Atualizando registrador r19 = -25
+[DEBUG] Forwarding valor -25 de Add1
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 13
+
+=== Estado do Simulador ===
+Ciclo: 13
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=1 Remaining=1
+Mult2: Busy=1 Remaining=5
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=-25 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 14
+
+=== Estado do Simulador ===
+Ciclo: 14
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=1 Op=4 Vj=0 Vk=0 Qj=- Qk=- A=0
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=1 Remaining=0
+Mult2: Busy=1 Remaining=4
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+r7: Busy=1 Qi=Mult0
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=-25 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+[DEBUG] Atualizando registrador r7 = 0
+[DEBUG] Forwarding valor 0 de Mult0
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 15
+
+=== Estado do Simulador ===
+Ciclo: 15
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=1 Remaining=3
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=-25 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 16
+
+=== Estado do Simulador ===
+Ciclo: 16
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=1 Remaining=2
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=-25 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 17
+
+=== Estado do Simulador ===
+Ciclo: 17
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=1 Remaining=1
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=-25 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+
+Clock Cycle: 18
+
+=== Estado do Simulador ===
+Ciclo: 18
+PC: 9
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=1 Op=5 Vj=0 Vk=1 Qj=- Qk=- A=0
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=1 Remaining=0
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+r10: Busy=1 Qi=Mult1
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=-25 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
+[DEBUG] Atualizando registrador r10 = 0
+[DEBUG] Forwarding valor 0 de Mult1
+
+[DEBUG] Processando instrução 9: beq r21 r22 100
+[DEBUG] Avaliando branch: r21=0, r22=0
+[DEBUG] Branch tomado: PC = 9 -> 110
+[DEBUG] Flushando pipeline...
+[DEBUG] Atualizando PC: 9 -> 110
+
+Execução finalizada em 19 ciclos.
+
+=== Estado do Simulador ===
+Ciclo: 19
+PC: 110
+
+--- Estações de Reserva ---
+Add0: Busy=0 
+Add1: Busy=0 
+Add2: Busy=0 
+Mult0: Busy=0 
+Mult1: Busy=0 
+
+--- Buffers de Load ---
+Load0: Busy=0 
+Load1: Busy=0 
+Load2: Busy=0 
+
+--- Buffers de Store ---
+Store0: Busy=0 
+Store1: Busy=0 
+Store2: Busy=0 
+
+--- Unidades Funcionais ---
+Add1: Busy=0 
+Add2: Busy=0 
+Mult1: Busy=0 
+Mult2: Busy=0 
+Load: Busy=0 
+Store: Busy=0 
+
+--- Status dos Registradores ---
+
+--- Valores dos Registradores ---
+r1=0 r10=0 r11=0 r12=1 r13=0 r14=0 r15=0 r16=0 r17=50 r18=0 r19=-25 r2=0 r20=0 r21=0 r22=0 r23=0 r24=0 r25=0 r3=0 r4=0 r5=0 r6=0 r7=0 r8=0 r9=0 
+
+--- Memória ---
+Memory[100]=0 Memory[200]=0 
