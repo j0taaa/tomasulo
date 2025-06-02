@@ -1,6 +1,6 @@
 # Simulador do Algoritmo de Tomasulo
 
-# Integrantes do Grupo 
+### Integrantes do Grupo 
    Gabriel Jota, Guilherme Oliveira, Henrique Oliveira e Larissa Mariella
    
 ## Índice
